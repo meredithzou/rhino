@@ -1,0 +1,11 @@
+﻿Option Explicit
+'Script written by <insert name>
+'Script copyrighted by <insert company name>
+'Script version Tuesday, October 22, 2013 6:54:27 AM
+
+Call Main()
+Sub Main()
+	Dim oShell
+	Set oShell = CreateObject("WScript.Shell")
+	Call oShell.Run("Z:/tmp/rhino.exe Z:/tmp/a Z:/tmp/bc")
+End Sub
