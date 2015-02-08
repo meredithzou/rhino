@@ -16,7 +16,7 @@ curve = rs.AddCurve([[0,0,0],[0,0,10]])
 pol2 = rs.ExtrudeSurface(pol0, curve)
 pol3 = rs.ExtrudeSurface(pol1, curve)
 
-#rs.BooleanDifference(pol2, pol3, True)
+rs.BooleanDifference(pol2, pol3, True)
 
 rs.DeleteObject(pol0)
 rs.DeleteObject(pol1)
