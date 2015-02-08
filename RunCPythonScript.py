@@ -1,3 +1,8 @@
+# This file is meant to be run by the IronPython Interpreter
+# embedded in Rhino 5 WIP, but would probably work in other
+# IronPython Interpreters.
+
+# Python Standard Library imports
 import os
 import sys
 
@@ -78,14 +83,12 @@ def run(pathToPythonScript, argumentList=[], pathToPython='python', verbose=Fals
     that don't work very well with IronPython. Returns a tuple
     containing [0] stdout (as a string), [1] stderr, and
     [2] exit code.
-
     Example Usage:
         >>> # a module that prints "hella world"
     >>> myModulePath = "C:\\Path\\To\\hella.py"
     >>> result = run(myModulePath)
     >>> print result
     ('hella world', '' ,0)
-
     Example 2:
         >>> # a module that prints the sum of two numbers
     >>> myModulePath = "C:\\Path\\To\\my\\module.py"
@@ -93,7 +96,6 @@ def run(pathToPythonScript, argumentList=[], pathToPython='python', verbose=Fals
     >>> result = run(myModulePath, arguments)
     >>> print result
     (8.6, '' ,0)
-
     Example 3:
         >>> # a module that prints "hella world"
     >>> # and then prints the sum of two numbers
@@ -102,7 +104,6 @@ def run(pathToPythonScript, argumentList=[], pathToPython='python', verbose=Fals
     >>> result = run(myModulePath, arguments)
     >>> print result
     (['hella world', 8.6], '', 0)
-
     Optionally, you can designate a path to the specific
     python interpreter you would like to use (maybe you want
     a specific version, or you did not put the path to
@@ -123,11 +124,9 @@ def run(pathToPythonScript, argumentList=[], pathToPython='python', verbose=Fals
         for arg in argumentList:
             args.append(arg)
     std_out, std_err, exit_code = run_command(args, verbose=verbose)
+
     return std_out, std_err, exit_code
 
 
 if __name__ == '__main__':
-    run("hello.py", [], "C:\\cygwin64/bin/python2.7.exe")
-    #run("Z:\\research/autonomous_cad/rhino/tmp/hello.py", [], "C:\\cygwin64/bin/python2.7.exe")
-#    run("Z:\\tmp\rhino.exe", ["Z:\\tmp\a", "Z:\\tmp\bbbccc"])
-print 'hello'
+    pass

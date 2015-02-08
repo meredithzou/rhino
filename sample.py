@@ -1,4 +1,6 @@
 import rhinoscriptsyntax as rs
+import Rhino
+import scriptcontext
 
 settings = Rhino.DocObjects.ObjectEnumeratorSettings()
 ltmp = scriptcontext.doc.Objects.GetObjectList(settings)
