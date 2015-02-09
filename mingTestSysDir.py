@@ -2,9 +2,9 @@ import sys
 for directory in sys.path:
     print directory
     
-#sys.path.append("/cygdrive/c/Program Files/Rhinoceros 5 (64-bit)/Plug-ins/IronPython/Lib")
-#sys.path.append("/cygdrive/c/Users/zoum/AppData/Roaming/McNeel/Rhinoceros/5.0/Plug-ins/IronPython (814d908a-e25c-493d-97e9-ee3861957f49)/settings/lib")
-#sys.path.append("/cygdrive/c/Users/zoum/AppData/Roaming/McNeel/Rhinoceros/5.0/scripts")
+sys.path.append("/cygdrive/c/Program Files/Rhinoceros 5 (64-bit)/Plug-ins/IronPython/Lib")
+sys.path.append("/cygdrive/c/Users/zoum/AppData/Roaming/McNeel/Rhinoceros/5.0/Plug-ins/IronPython (814d908a-e25c-493d-97e9-ee3861957f49)/settings/lib")
+sys.path.append("/cygdrive/c/Users/zoum/AppData/Roaming/McNeel/Rhinoceros/5.0/scripts")
 print("---------------------------")
 for directory in sys.path:
     print directory
